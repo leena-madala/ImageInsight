@@ -1,0 +1,10 @@
+# Handle line endings for text files
+* text=auto
+
+# Specific configurations for known file types
+*.java  text eol=lf
+*.xml   text eol=lf
+*.properties text eol=lf
+*.sh    text eol=lf
+*.cmd   text eol=crlf
+/mvnw text eol=lf

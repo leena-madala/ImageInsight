@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .  # Location of the Dockerfile
+    container_name: imageinsight_app
+    ports:
+      - "8080:8080"  # Map container port 8080 to host port 8080
+    volumes:
+      - ./logs:/imageinsight/logs  # Optional: Mount logs for persistent storage
